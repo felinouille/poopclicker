@@ -1,0 +1,145 @@
+.page1 {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(162, 91, 39);
+}
+
+.conteneur {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.poopconteneur {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 79%
+}
+
+.upgradeconteneur {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 79%
+    
+}
+
+.lowbar {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color:  rgb(162, 91, 39);
+}
+.poop {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 30%;
+    left: 200px;
+}
+
+.poop:active {
+    transform: scale(0.9);
+
+}
+
+.numberpoop {
+    position: absolute;
+    top: 100px;
+    left: 183px;
+    font-size: 300%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paper {
+    position: absolute;
+    height: 249px;
+    width: 100%;
+
+}
+
+.paperimg {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+}
+
+.paperupgrade {
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+
+.papercost {
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}
+
+.toilette {
+    position: absolute;
+    height: 249px;
+    width: 100%;
+    top: 249px;
+}
+
+.toiletteimg {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+}
+
+.toiletteupgrade {
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+
+.toilettecost {
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}
+
+.constipation {
+    position: absolute;
+    height: 249px;
+    width: 100%;
+    top: 498px;
+}
+
+.constipationimg {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+}
+
+.constipationupgrade {
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+
+.constipationcost {
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}
+
