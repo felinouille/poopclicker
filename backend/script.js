@@ -13,7 +13,7 @@ const paperCost = document.querySelector(".papercost");
 const toiletteUpgrade = document.querySelector(".toiletteupgrade");
 const toiletteCost = document.querySelector(".toilettecost");
 
-const constipationUpgrade = document.querySelector("constipationupgrade");
+const constipationUpgrade = document.querySelector(".constipationupgrade");
 const constipationCost = document.querySelector(".constipationcost");
 
 //variable de jeux
@@ -49,13 +49,37 @@ paper.addEventListener("click", () => {
         numberofPoop.innerHTML = "you have " + totalPoop + " poop";
         paperCost.innerHTML = "prochaine amelioration " + paperprice + " poop";
         paperUpgrade.innerHTML = "paper au niveau " + paperlvl;
+    } else {
+        alert("you don't have enough money");
     }
 });
 
 toilette.addEventListener("click", () => {
-    
+    if(totalPoop >= toiletteprice) {
+        toilettelvl++
+        poopByClick = poopByClick + 15;
+        CPS = CPS + poopByClick;
+        totalPoop -= toiletteprice;
+        toiletteprice = Math.floor(toiletteprice * 1.5);
+        numberofPoop.innerHTML = "you have " + totalPoop + " poop";
+        toiletteCost.innerHTML = "prochaine amelioration " + toiletteprice + " poop";
+        toiletteUpgrade.innerHTML = "paper au niveau " + toilettelvl;
+    } else {
+        alert("you don't have enough money");
+    }
 });
 
 constipation.addEventListener("click", () => {
-    
+    if(totalPoop >= constipationprice) {
+        constipationlvl++
+        poopByClick = poopByClick + 50;
+        CPS = CPS + poopByClick;
+        totalPoop -= constipationprice;
+        constipationprice = Math.floor(constipationprice * 1.5);
+        numberofPoop.innerHTML = "you have " + totalPoop + " poop";
+        constipationCost.innerHTML = "prochaine amelioration " + constipationprice + " poop";
+        constipationUpgrade.innerHTML = "paper au niveau " + constipationlvl;
+    } else {
+        alert("you don't have enough money");
+    }
 });
