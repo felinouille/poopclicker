@@ -6,6 +6,7 @@ const constipation = document.querySelector(".constipationimg");
 
 //recuperation des texte
 const numberofPoop = document.querySelector(".numberpoop");
+const poopPerClick = document.querySelector(".poopPerclick");
 
 const paperUpgrade = document.querySelector(".paperupgrade");
 const paperCost = document.querySelector(".papercost");
@@ -49,6 +50,7 @@ paper.addEventListener("click", () => {
         numberofPoop.innerHTML = "you have " + totalPoop + " poop";
         paperCost.innerHTML = "prochaine amelioration " + paperprice + " poop";
         paperUpgrade.innerHTML = "paper au niveau " + paperlvl;
+        poopPerClick.innerHTML = poopByClick + " poop per click";
     } else {
         alert("you don't have enough money");
     }
@@ -64,6 +66,7 @@ toilette.addEventListener("click", () => {
         numberofPoop.innerHTML = "you have " + totalPoop + " poop";
         toiletteCost.innerHTML = "prochaine amelioration " + toiletteprice + " poop";
         toiletteUpgrade.innerHTML = "paper au niveau " + toilettelvl;
+        poopPerClick.innerHTML = poopByClick + " poop per click";
     } else {
         alert("you don't have enough money");
     }
@@ -79,6 +82,7 @@ constipation.addEventListener("click", () => {
         numberofPoop.innerHTML = "you have " + totalPoop + " poop";
         constipationCost.innerHTML = "prochaine amelioration " + constipationprice + " poop";
         constipationUpgrade.innerHTML = "paper au niveau " + constipationlvl;
+        poopPerClick.innerHTML = poopByClick + " poop per click";
     } else {
         alert("you don't have enough money");
     }
